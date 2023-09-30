@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue-router@4"></script>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1>Doris Hou, Full-stack Developer</h1>
+            <nav>
+                <router-link to="/about">About</router-link>
+                <router-link to="/skills">Skills</router-link>
+                <router-link to="/projects">Projects</router-link>
+                <router-link to="/contact">Contact</router-link>
+            </nav>
+        </header>
+
+        <router-view></router-view>
+
+        <footer>
+            &copy; 2023 Doris
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
